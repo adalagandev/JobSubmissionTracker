@@ -1,0 +1,27 @@
+[
+    {
+        "jobPostingId":"12345",
+        "jobPostingName":"Senior Software Engineer",
+        "pointOfContact":"Bara Green",
+        "hiringCompany":"XYZ llc",
+        "salary":"140000",
+        "status":"interviewing"
+    },
+    {
+        "jobPostingId":"112244",
+        "jobPostingName":"Project Manager",
+        "pointOfContact":"Jenna Ponds",
+        "hiringCompany":"Sunspear",
+        "salary":"120000",
+        "status":"submitted"
+    },
+    {
+        "jobPostingId":"112249",
+        "jobPostingName":"IT Director",
+        "pointOfContact":"Rod James",
+        "hiringCompany":"Greenleaf bros",
+        "salary":"160000",
+        "status":"pending interview feedback"
+    }
+
+]

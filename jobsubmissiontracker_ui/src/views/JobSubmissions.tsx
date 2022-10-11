@@ -3,6 +3,8 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Unstable_Grid2';
+import CollapsibleTable from '../references/MuiTables';
+import SubmissionsTable from '../components/SubmissionsTable';
 
 const JobSubmissions = () => {
     const Item = styled(Paper)(({ theme }) => ({
@@ -19,7 +21,7 @@ const JobSubmissions = () => {
       <Grid container spacing={1}>
         <Grid xs={1}>&nbsp;</Grid>
         <Grid xs={10}>
-            <Item>8</Item>
+          <SubmissionsTable />
         </Grid>
         <Grid xs={1}>&nbsp;</Grid>
         
