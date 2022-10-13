@@ -12,33 +12,33 @@ const NavBar= () =>{
     <>
      <AppBar position="static" >
      <Container maxWidth="xl">
-        <Toolbar disableGutters>
+         <Toolbar disableGutters>
      <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-     <Link to="/">
-        <Button
-                    key='My Dashboard'
-                    value='My Dashboard'
-                    sx={{ my: 2, color: 'white', display: 'block' }}  
-                    >                    
-                    My Dashboard
-         </Button>
-     </Link>
-     <Link to="/jobsubmissions">
-        <Button
-                    key='Job Submissions'
-                    value='Job Submissions'
-                    sx={{ my: 2, color: 'white', display: 'block' }}  >                    
-                   Job Submissions
-         </Button>
-     </Link>
-     <Link to="/myinfo">
-        <Button
-                    key='My Info'
-                    value='My Info'
-                    sx={{ my: 2, color: 'white', display: 'block' }}  >                    
-                   My Info
-         </Button>
-     </Link>
+             <Link to="/">
+                <Button
+                            key='My Dashboard'
+                            value='My Dashboard'
+                            sx={{ my: 2, color: 'white', display: 'block' }}
+                            >
+                            My Dashboard
+                 </Button>
+             </Link>
+             <Link to="/jobsubmissions">
+                <Button
+                            key='Job Submissions'
+                            value='Job Submissions'
+                            sx={{ my: 2, color: 'white', display: 'block' }}  >
+                           Job Submissions
+                 </Button>
+             </Link>
+             <Link to="/myinfo">
+                <Button
+                            key='My Info'
+                            value='My Info'
+                            sx={{ my: 2, color: 'white', display: 'block' }}  >
+                           My Info
+                 </Button>
+             </Link>
     </Box>
     </Toolbar>
     </Container>
