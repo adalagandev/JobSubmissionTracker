@@ -22,6 +22,7 @@ const JobSubmissions = () => {
         <Grid xs={1}>&nbsp;</Grid>
         <Grid xs={10}>
           <SubmissionsTable />
+            {/*<CollapsibleTable />*/}
         </Grid>
         <Grid xs={1}>&nbsp;</Grid>
         
