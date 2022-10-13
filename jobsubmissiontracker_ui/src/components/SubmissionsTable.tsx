@@ -41,9 +41,9 @@ const SubmissionsTable = () => {
               </TableRow>
             </TableHead>
             <TableBody>            
-              <>{records && records.map((row) => {
-                              console.log("SubmissionsTable-SubmissionsRow row ", row);
-                              return <SubmissionsRow key={row.jobPostingId} record={row}
+              <>{records && records.map((row, index) => {
+
+                              return <SubmissionsRow key={row.jobPostingId} record={row} isOddRow={index%2!==0}
                               />                              
                       })}</>    
             </TableBody>

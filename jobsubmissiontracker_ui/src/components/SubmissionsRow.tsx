@@ -15,15 +15,19 @@ import TableBody from "@mui/material/TableBody";
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import {red} from "@mui/material/colors";
 
-const SubmissionsRow = (props: {record: SubmissionsRecord} ) => {
-  // console.log("SubmissionsRow", record);
-  console.log("SubmissionsRow", props);
+const SubmissionsRow = (props: {record: SubmissionsRecord, isOddRow?: boolean} ) => {
+
     const {record } = props;
     
     const [open, setOpen] = React.useState(false);
+    const [rowColor] =   React.useState<string>(props.isOddRow ? '#c7caf5':'#FFFFFF');
+    const [subRowColor] =   React.useState<string>(props.isOddRow ? '#e3e4fa':'#FFFFFF');
+
+    console.log("SubmissionsRow-props isOddRow", props.isOddRow );
+    console.log("SubmissionsRow-props rowColor", rowColor );
     return <>
       <React.Fragment>     
-          <TableRow  sx={{ '& > *': { borderBottom: 'unset' } }}>
+          <TableRow  sx={{ '& > *': { borderBottom: '1px solid',backgroundColor:rowColor}}}>
             <TableCell>
               <IconButton
                 aria-label="expand row"
@@ -48,7 +52,7 @@ const SubmissionsRow = (props: {record: SubmissionsRecord} ) => {
             <TableCell align="center">{record.salary}</TableCell>
 
           </TableRow>
-          <TableRow>
+          <TableRow sx={{ '& > *': {backgroundColor:subRowColor}}}>
                   <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={7}>
                       <Collapse in={open} timeout="auto" unmountOnExit>
                           <Box sx={{ margin: 1 }}>
@@ -60,7 +64,8 @@ const SubmissionsRow = (props: {record: SubmissionsRecord} ) => {
                                       <TableRow>
                                           <TableCell align="center">Submission Date</TableCell>
                                           <TableCell align="center">Interview Process</TableCell>
-                                          <TableCell align="center">Notes</TableCell>
+                                          <TableCell align="center">
+                                              Notes</TableCell>
                                       </TableRow>
                                   </TableHead>
                                   <TableBody>
@@ -78,13 +83,12 @@ const SubmissionsRow = (props: {record: SubmissionsRecord} ) => {
                                                       {record.interviewProcess?.numberOfRounds}
                                                   </>
                                               </TableCell>
-                                              <TableCell align="center">{record.notes}</TableCell>
+                                              <TableCell align="center"
+                                                         sx={{ '& > *': { overflowWrap:'break-word'}}}
+                                              >
+                                                  {record.notes}
+                                              </TableCell>
                                           </TableRow>
-
-
-
-
-
                                   </TableBody>
                               </Table>
                           </Box>
