@@ -94,15 +94,6 @@ const SubmissionsRow = (props: {record: SubmissionsRecord, isOddRow?: boolean} )
                           </Box>
                       </Collapse>
                   </TableCell>
-              {/*<TableCell>*/}
-              {/*    <Collapse in={open} timeout="auto" unmountOnExit>*/}
-              {/*        \*/}
-              {/*        /!*<Typography variant="h6" gutterBottom component="div"></Typography>*!/*/}
-              {/*        Other Details*/}
-
-              {/*    </Collapse>*/}
-              {/*</TableCell>*/}
-
           </TableRow>
       </React.Fragment>
     </>
