@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-jobsubmissiontracker-dev-151658-authRole",
+      "UnauthRoleArn": "arn:aws:iam::882623912303:role/amplify-jobsubmissiontracker-dev-151658-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::882623912303:role/amplify-jobsubmissiontracker-dev-151658-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-jobsubmissiontracker-dev-151658-deployment",
+      "UnauthRoleName": "amplify-jobsubmissiontracker-dev-151658-unauthRole",
+      "StackName": "amplify-jobsubmissiontracker-dev-151658",
+      "StackId": "arn:aws:cloudformation:us-east-1:882623912303:stack/amplify-jobsubmissiontracker-dev-151658/51cf5dd0-4af9-11ed-95bc-0a15fd071881",
+      "AmplifyAppId": "d1jym3htetvbrc"
+    },
+    "categories": {
+      "auth": {
+        "jobsubmissiontracker542df6c8": {}
+      }
+    }
+  }
+}
