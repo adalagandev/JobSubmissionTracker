@@ -27,19 +27,10 @@ function App({ signOut }) {
   return (
      <View className="App">
 
-      <Card>
-        <Image
-            src={logo}
-            className="App-logo"
-            alt="logo"
-            height="20%"
-            width="20%"/>
-        <Heading level={1}>We now have Auth!</Heading>
-        <Button onClick={signOut}>Sign Out</Button>
-      </Card>
+
 
     <Router>
-      <NavBar />
+      <NavBar signOut={signOut} />
       <br />
       <Container maxWidth="xl">        
       <Routes>
@@ -49,6 +40,7 @@ function App({ signOut }) {
         <Route path='/myinfo' element={<MyInfo />} />
       </Routes>
       </Container>
+
     </Router>
 
     </View>
