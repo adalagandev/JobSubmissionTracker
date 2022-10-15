@@ -7,7 +7,10 @@ import Button from '@mui/material/Button';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import AdbIcon from '@mui/icons-material/Adb';
-const NavBar= () =>{
+import {Card, Heading, Image} from "@aws-amplify/ui-react";
+import logo from "../logo.svg";
+// @ts-ignore
+const NavBar= ({ signOut }) =>{
   return (
     <>
      <AppBar position="static" >
@@ -39,6 +42,10 @@ const NavBar= () =>{
                            My Info
                  </Button>
              </Link>
+
+    </Box>
+    <Box>
+        <Button  sx={{ my: 2, color: 'white', display: 'block' }}  onClick={signOut}>Sign Out</Button>
     </Box>
     </Toolbar>
     </Container>

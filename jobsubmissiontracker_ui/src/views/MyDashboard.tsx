@@ -16,14 +16,12 @@ const MyDashboard = () => {
 
     return    <>
     <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={2}>
-        <Grid xs={4}>
-        <Item>xs=4</Item>
+      <Grid container spacing={1}>
+        <Grid xs={12}>
+        <Item>Work in Progress - Check out Job Submissions</Item>
          
         </Grid>
-        <Grid xs={8}>
-        <Item>8</Item>
-        </Grid>
+
         
       </Grid>
     </Box>
